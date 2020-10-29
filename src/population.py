@@ -66,15 +66,15 @@ def _parse_data(csv_file):
         # 12: pop_2000
         # 14: pop_2010
         # 17: percentage change
+
+        # skip the tract if it's not in a CBSA
+        if not line[7]:
+          continue
         CBSA, name = int(line[7]), line[8]
         pop00, pop10 =  int(line[12]), int(line[14])
         # I would get better precision calculating this change myself,
         # but reading it from the input file is faster.
         percent_change = float(line[17])
-
-        # skip the tract if it's not in a CBSA
-        if not CBSA:
-            continue
 
         idx = bisect_left(CBSAs, CBSA)
         # if the CBSA hasn't been seen already:

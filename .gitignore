@@ -3,3 +3,5 @@
 ##########################
 /src/population_backup.py
 /src/population_before_refactor.py
+
+/src/__pycache__
