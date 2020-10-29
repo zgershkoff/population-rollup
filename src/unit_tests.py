@@ -54,6 +54,7 @@ class TestParseData(unittest.TestCase):
         self.assertEqual(data[CBSAs[0]]["pop00"], 10273)
         self.assertTrue(data[CBSAs[0]]["change"] <= -3.1 + epsilon)
         self.assertTrue(data[CBSAs[0]]["change"] >= -3.1 - epsilon)
+        input_data[0][7] = '28540' # in case future tests want this
 
     def test_empty_report(self):
         input_data = [self.input[0]]
