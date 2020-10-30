@@ -4,4 +4,7 @@
 /src/population_backup.py
 /src/population_before_refactor.py
 
+#############################
+# cached stuff from testing #
+#############################
 /src/__pycache__
