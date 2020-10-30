@@ -70,7 +70,7 @@ def _parse_data(csv_file):
             continue
         CBSA = int(line[7])
         name = line[8]
-        pop00 =  int(line[12].replace(',', ''))
+        pop00 = int(line[12].replace(',', ''))
         pop10 = int(line[14].replace(',', ''))
 
         # I would get better precision calculating this change myself,
