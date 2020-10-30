@@ -69,12 +69,20 @@ def _parse_data(csv_file):
 
         # skip the tract if it's not in a CBSA
         if not line[7]:
-          continue
-        CBSA, name = int(line[7]), line[8]
-        pop00, pop10 =  int(line[12]), int(line[14])
+            continue
+        CBSA = int(line[7])
+        name = line[8]
+        pop00 =  int(line[12].replace(',', ''))
+        pop10 = int(line[14].replace(',', ''))
+
         # I would get better precision calculating this change myself,
         # but reading it from the input file is faster.
-        percent_change = float(line[17])
+        # If there is no population, let's count the tract but treat
+        # the change as 0
+        if pop00 and pop10:
+            percent_change = float(line[17].replace(',', ''))
+        else:
+            percent_change = 0
 
         idx = bisect_left(CBSAs, CBSA)
         # if the CBSA hasn't been seen already:
