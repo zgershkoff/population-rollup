@@ -27,7 +27,6 @@ class TestParseData(unittest.TestCase):
 
     def __init__(self, *args, **kwargs):
         super(TestParseData, self).__init__(*args, **kwargs)
-        self.header = ['GEOID', 'ST10', 'COU10', 'TRACT10', 'AREAL10', 'AREAW10', 'CSA09', 'CBSA09', 'CBSA_T', 'MDIV09', 'CSI', 'COFLG', 'POP00', 'HU00', 'POP10', 'HU10', 'NPCHG', 'PPCHG', 'NHCHG', 'PHCHG']
         self.input = [
         ['02130000100', '02', '130', '000100', '4835.518216', '1793.906364', '', '28540', 'Ketchikan, AK', '', '2', 'C', '3801', '1736', '3484', '1694', '-317', '-8.34', '-42', '-2.42'],
         ['02130000200', '02', '130', '000200', '5.204047664', '0.4525275793', '', '28540', 'Ketchikan, AK', '', '2', 'C', '4909', '2156', '4884', '2179', '-25', '-0.51', '23', '1.07'],

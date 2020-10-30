@@ -1,5 +1,5 @@
 ## Introduction
-This takes population change data as provided by the census and rolls it up. It aggregates data from each Core Based Statistical Area (CBSA) and produces a CSV listing the CBSA ID number along with the following:
+This takes population change data as provided by the census and rolls it up. It aggregates data from each Core Based Statistical Area (CBSA) and produces a CSV file listing the CBSA ID number along with the following:
 
 * total number of census tracts,
 * total population in 2000,
