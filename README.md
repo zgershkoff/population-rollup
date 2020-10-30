@@ -6,7 +6,7 @@ This takes population change data as provided by the census and rolls it up. It 
 * total population in 2010 and
 * average population percent change for census tracts in this Core Based Statistical Area
 
-If a tract is empty in 2000 or 2010, I've made the choice to count it in the total number of tracks, and to treat the percent change as 0 for the purpose of averaging.
+If a tract is empty in 2000 or 2010, I've made the choice to count it in the total number of tracts, and to treat the percent change as 0 for the purpose of averaging.
 
 ## Instructions
 Python 3.8 is used for this application.
