@@ -5,8 +5,6 @@ from bisect import bisect_left
 from csv import reader, DictWriter
 from collections import defaultdict
 
-# to do: refactor this whole thing to use a single dict of dicts for the CBSA
-
 def calculate_moving_average(old_avg, num, new_item):
     """
     Returns the updated average, based on how many values were in the old one
